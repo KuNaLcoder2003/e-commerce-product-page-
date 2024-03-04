@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    /*(with 75% opacity for lightbox background) */
+    --font-family : "Kumbh Sans", sans-serif;
+
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: var(--White);
+}
+
+.content-conatiner{
+    /* border: 1px solid black; */
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    padding: 3px;
+}
+
+.navbar-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+}
+
+
+.logo-links-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.links  a{
+    text-decoration: none;
+    color: var(--Grayish-blue);
+    font-style: var(--font-family);
+}
+
+.cart-user-image-section{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+.user{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url('/challenge3_assests/image-avatar.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.vector-img{
+    height: 1px;
+    width: 97%;
+    margin:  0 auto;
+    background-color: var(--Dark-grayish-blue);
+}
+
+.products{
+    width: 100%;
+    margin-top: 35px;
+    /* border: 1px solid black; */
+    height: 70%;
+    display: flex;
+    /* grid-template-columns: repeat(2 , 1fr ); */
+}
+
+.part-1 , .part-2{
+    width: 47%;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.part-1{
+    width: 37%;
+}
+
+.part-1{
+    /* border: 1px solid black; */
+    width: 30%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-2{
+    width: 63%;
+}
+
+.part-1-wrapper{
+
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    margin-left: 6px;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.main-image{
+    width: 100%;
+    height: 100%;
+    background-image: url('/challenge3_assests/image-product-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.sub-images{
+    width: 70%;
+    height: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.sub-img-continer{
+    width: 30%;
+    height: 30%;
+    aspect-ratio: 1/1;
+    /* border: 1px solid black; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.one{
+    background-image: url('/challenge3_assests/image-product-1-thumbnail.jpg');
+}
+
+.two{
+    background-image: url('/challenge3_assests/image-product-2-thumbnail.jpg');
+}
+.three{
+    background-image: url('/challenge3_assests/image-product-3-thumbnail.jpg');
+}
+
+.four{
+    background-image: url('/challenge3_assests/image-product-4-thumbnail.jpg');
+}
