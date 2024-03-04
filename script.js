@@ -3,6 +3,8 @@ const image_1_url = 'challenge3_assests/image-product-1.jpg';
 const image_2_url = 'challenge3_assests/image-product-2.jpg';
 const image_3_url = 'challenge3_assests/image-product-3.jpg'
 const image_4_url = 'challenge3_assests/image-product-4.jpg';
+const overlay = document.querySelector('.overlay');
+const modal = document.querySelector('.lightbox');
 
 const urls = [image_1_url , image_2_url , image_3_url , image_4_url];
 
@@ -18,3 +20,12 @@ thumb_nails.forEach((thumb_nail , index)=>{
 function changeMainPhoto(index){
     main_image.style.backgroundImage = `url(${urls[index]})`;
 }
+main_image.addEventListener('click' ,()=>{
+    overlay.classList.add('active');
+    modal.classList.add('active');
+})
+overlay.addEventListener('click' ,()=>{
+    overlay.classList.remove('active');
+    modal.classList.remove('active');
+})
+
