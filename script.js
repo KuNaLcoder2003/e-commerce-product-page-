@@ -7,7 +7,6 @@ const modal = document.querySelector('.lightbox');
 const modal_main_img = document.querySelector('.main-img');
 const modal_sub_images = document.querySelectorAll('.subimgcontiner');
 const left_btn = document.querySelector('.left-btn');
-// const right_button = document.querySelector('.right-btn');
 const close_modal_btn = document.querySelector('.close-btn');
 
 let nexttIndex  = 0;
